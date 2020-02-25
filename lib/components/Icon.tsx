@@ -2,19 +2,18 @@ import React from "react";
 
 interface IconProps {
   type:
-    | string
-    | "AntDesign"
-    | "MaterialIcons"
-    | "EvilIcons"
-    | "Entypo"
-    | "FontAwesome"
-    | "Foundation"
-    | "Ionicons"
-    | "MaterialCommunityIcons"
-    | "Zocial"
-    | "Octicons"
-    | "SimpleLineIcons"
-    | "Fontisto";
+  | string
+  | "AntDesign"
+  | "MaterialIcons"
+  | "EvilIcons"
+  | "Entypo"
+  | "FontAwesome"
+  | "Foundation"
+  | "Ionicons"
+  | "MaterialCommunityIcons"
+  | "Zocial"
+  | "Octicons"
+  | "SimpleLineIcons";
   name: string;
   size?: number;
   color?: string;
@@ -168,18 +167,6 @@ const Icon = (props: IconProps): JSX.Element => {
           style={style}
           color={color}
           size={size ? size : 18}
-          onPress={onPress}
-        />
-      );
-    }
-    case "Fontisto": {
-      const Fontisto = require("react-native-vector-icons/Fontisto").default;
-      return (
-        <Fontisto
-          name={name}
-          size={size}
-          style={style}
-          color={color}
           onPress={onPress}
         />
       );
